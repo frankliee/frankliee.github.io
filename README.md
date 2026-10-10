@@ -40,4 +40,6 @@ npm run build
 
 ## GitHub Pages
 
-正式站点地址配置为 https://frankliee.github.io 。发布时需要构建 Hexo，并将 `public/` 中的网页部署到 GitHub Pages；仅发布仓库根目录不会构建博客。本次改动用于本地预览，尚未配置或执行线上发布。
+正式站点地址为 https://frankliee.github.io 。`.github/workflows/pages.yml` 会在推送到 `main` 时自动安装依赖、构建 Hexo，并将 `public/` 中的静态网页发布到 GitHub Pages，也支持在 Actions 页面手动运行。
+
+仓库的 **Settings → Pages → Build and deployment → Source** 应设置为 **GitHub Actions**。该项目使用 Hexo，默认的 Jekyll 分支构建无法生成博客。`zf_main` 用于本地开发，需要将改动推送到 `main` 才会更新线上网站。
