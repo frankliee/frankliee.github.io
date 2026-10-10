@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="880" viewBox="0 0 640 880" role="img" aria-labelledby="title desc">
+  <title id="title">VLA 通过 XPolicyLab 接入 RoboTwin 的交互流程</title>
+  <desc id="desc">RoboTwin 提供图像、指令与状态，通过 XPolicyLab 服务连接送到模型适配器；适配器运行 VLA 并将动作块转换成环境可执行的动作，执行后生成新的观测。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#468c75"/></marker></defs>
+  <rect width="640" height="880" rx="24" fill="#f5f9f6"/>
+  <g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    <text x="36" y="57" font-size="29" font-weight="700" fill="#224c3e">让仿真环境与 VLA 连起来</text>
+    <text x="36" y="94" font-size="21" fill="#6c7c73">模型、仿真各有运行环境；适配器转换数据</text>
+    <rect x="42" y="130" width="502" height="138" rx="18" fill="#e2efe7" stroke="#c5dccd" stroke-width="2"/>
+    <text x="293" y="174" text-anchor="middle" font-size="29" font-weight="600" fill="#326b54">RoboTwin 仿真环境</text>
+    <text x="293" y="212" text-anchor="middle" font-size="23" fill="#4c6256">执行动作、判断任务是否完成</text>
+    <text x="293" y="245" text-anchor="middle" font-size="22" fill="#61756a">提供图像 + 语言指令 + 状态</text>
+    <path d="M293 268V344" fill="none" stroke="#468c75" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="322" y="311" font-size="21" fill="#6c7c73">XPolicyLab / WebSocket</text>
+    <rect x="42" y="354" width="502" height="117" rx="18" fill="#fff" stroke="#cedfd5" stroke-width="2"/>
+    <text x="293" y="398" text-anchor="middle" font-size="27" font-weight="600" fill="#2f4f3e">输入适配 · update_obs</text>
+    <text x="293" y="439" text-anchor="middle" font-size="23" fill="#61756a">相机映射、状态打包、模型预处理</text>
+    <path d="M293 471V509" fill="none" stroke="#468c75" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="42" y="519" width="502" height="117" rx="18" fill="#f8ecdc" stroke="#ead5b7" stroke-width="2"/>
+    <text x="293" y="562" text-anchor="middle" font-size="28" font-weight="600" fill="#8b6030">VLA 推理</text>
+    <text x="293" y="603" text-anchor="middle" font-size="23" fill="#806647">加载匹配的权重，预测动作块</text>
+    <path d="M293 636V674" fill="none" stroke="#468c75" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="42" y="684" width="502" height="119" rx="18" fill="#fff" stroke="#cedfd5" stroke-width="2"/>
+    <text x="293" y="728" text-anchor="middle" font-size="27" font-weight="600" fill="#2f4f3e">输出适配 · get_action</text>
+    <text x="293" y="770" text-anchor="middle" font-size="23" fill="#61756a">返回每一步的双臂与夹爪动作字典</text>
+    <path d="M544 744H590V199H549" fill="none" stroke="#468c75" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="574" y="462" width="32" height="140" rx="8" fill="#f5f9f6"/>
+    <g text-anchor="middle" font-size="22" fill="#468c75"><text x="590" y="487">动</text><text x="590" y="519">作</text><text x="590" y="551">回</text><text x="590" y="583">传</text></g>
+    <text x="320" y="848" text-anchor="middle" font-size="21" fill="#6c7c73">训练与推理的输入处理、动作表示和统计量应一致</text>
+  </g>
+</svg>

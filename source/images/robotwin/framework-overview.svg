@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="650" viewBox="0 0 640 650" role="img" aria-labelledby="title desc">
+  <title id="title">RoboTwin 的任务、数据生成与策略评测关系</title>
+  <desc id="desc">共享仿真任务与物体资源，一方面生成专家演示供模型训练，另一方面接入策略进行任务评估。此图为依据官方资料绘制的概念概览。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#468c75"/></marker></defs>
+  <rect width="640" height="650" rx="24" fill="#f5f9f6"/>
+  <g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    <text x="36" y="57" font-size="29" font-weight="700" fill="#224c3e">RoboTwin：任务、数据、测评</text>
+    <text x="36" y="91" font-size="21" fill="#6c7c73">先搭建操作世界，再生成数据或评估策略</text>
+    <rect x="50" y="122" width="540" height="170" rx="18" fill="#fff" stroke="#cedfd5" stroke-width="2"/>
+    <text x="320" y="162" text-anchor="middle" font-size="28" font-weight="600" fill="#2f4f3e">仿真任务 + 物体资源</text>
+    <g stroke="#6e8f7d" stroke-width="4" stroke-linejoin="round" fill="none">
+      <path d="M146 188L129 211V235M146 188L164 211V235"/>
+      <rect x="137" y="221" width="20" height="21" rx="3" fill="#d87966" stroke="none"/>
+      <path d="M287 225Q319 265 351 225ZM291 207Q319 239 347 207Z" fill="#9dc2cd" stroke="#6e96a5"/>
+      <path d="M464 194L452 213L471 230M508 194L520 213L501 230"/>
+      <rect x="477" y="219" width="20" height="20" rx="3" fill="#d87966" stroke="none"/>
+    </g>
+    <g font-size="20" text-anchor="middle" fill="#718077"><text x="147" y="272">抓取</text><text x="320" y="272">堆叠</text><text x="488" y="272">双臂交接</text></g>
+    <path d="M320 292V333H170V384M320 333H470V384" fill="none" stroke="#468c75" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M320 333H170V384" fill="none" stroke="#468c75" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="40" y="396" width="260" height="181" rx="18" fill="#e2efe7" stroke="#c5dccd" stroke-width="2"/>
+    <rect x="340" y="396" width="260" height="181" rx="18" fill="#f8ecdc" stroke="#ead5b7" stroke-width="2"/>
+    <g font-size="28" font-weight="600" text-anchor="middle"><text x="170" y="440" fill="#326b54">数据生成</text><text x="470" y="440" fill="#8b6030">策略评测</text></g>
+    <g font-size="23" text-anchor="middle" fill="#4c6256"><text x="170" y="489">专家演示轨迹</text><text x="170" y="530">用于模型训练</text><text x="470" y="489">策略接入环境</text><text x="470" y="530">统计任务表现</text></g>
+    <text x="320" y="623" text-anchor="middle" fill="#6c7c73" font-size="21">两条路径，共用任务与场景；模型可按需接入</text>
+  </g>
+</svg>

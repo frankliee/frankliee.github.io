@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="880" viewBox="0 0 640 880" role="img" aria-labelledby="title desc">
+  <title id="title">机器人策略的一轮评测闭环</title>
+  <desc id="desc">初始化任务，获取观测，策略推理，仿真执行；未结束时继续获取观测，结束后记录结果并进行多轮汇总。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#468c75"/></marker>
+  </defs>
+  <rect width="640" height="880" rx="24" fill="#f5f9f6"/>
+  <g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    <text x="40" y="58" fill="#224c3e" font-size="30" font-weight="700">策略评测：一轮闭环</text>
+    <text x="40" y="92" fill="#66766f" font-size="21">概念示意 · 观测驱动动作，执行产生新观测</text>
+    <g fill="none" stroke="#468c75" stroke-width="3" marker-end="url(#arrow)">
+      <path d="M310 212V250"/><path d="M310 332V370"/><path d="M310 452V490"/><path d="M310 572V620"/><path d="M310 712V752"/>
+      <path d="M520 670H582V292H520"/>
+    </g>
+    <g stroke="#cfdfd5" stroke-width="2" fill="#fff">
+      <rect x="90" y="128" width="430" height="84" rx="16"/>
+      <rect x="90" y="248" width="430" height="84" rx="16"/>
+      <rect x="90" y="368" width="430" height="84" rx="16"/>
+      <rect x="90" y="488" width="430" height="84" rx="16"/>
+    </g>
+    <g fill="#e4f1e9">
+      <circle cx="127" cy="170" r="22"/><circle cx="127" cy="290" r="22"/><circle cx="127" cy="410" r="22"/><circle cx="127" cy="530" r="22"/>
+    </g>
+    <g text-anchor="middle" fill="#326b54" font-size="22" font-weight="700">
+      <text x="127" y="178">1</text><text x="127" y="298">2</text><text x="127" y="418">3</text><text x="127" y="538">4</text>
+    </g>
+    <g fill="#283d33" font-size="28" font-weight="600">
+      <text x="167" y="164">初始化任务</text><text x="167" y="284">获取观测</text><text x="167" y="404">策略推理</text><text x="167" y="524">仿真执行</text>
+    </g>
+    <g fill="#718077" font-size="21">
+      <text x="167" y="194">选择场景、配置与随机种子</text><text x="167" y="314">图像、机器人状态等</text><text x="167" y="434">把观测转换成动作</text><text x="167" y="554">控制机械臂，更新环境状态</text>
+    </g>
+    <rect x="90" y="628" width="430" height="84" rx="16" fill="#fff3e2" stroke="#e9c99a" stroke-width="2"/>
+    <text x="305" y="663" text-anchor="middle" fill="#795324" font-size="28" font-weight="600">回合是否结束？</text>
+    <text x="305" y="694" text-anchor="middle" fill="#947247" font-size="21">任务完成或达到回合限制</text>
+    <rect x="531" y="631" width="68" height="28" rx="8" fill="#f5f9f6"/>
+    <text x="565" y="652" text-anchor="middle" fill="#468c75" font-size="19">未结束</text>
+    <text x="331" y="741" fill="#468c75" font-size="20">结束</text>
+    <rect x="90" y="760" width="430" height="84" rx="16" fill="#326b54"/>
+    <text x="305" y="796" text-anchor="middle" fill="#fff" font-size="27" font-weight="600">记录结果，多轮汇总</text>
+    <text x="305" y="826" text-anchor="middle" fill="#dceee3" font-size="21">成功率 · 失败案例 · 配置与回放</text>
+  </g>
+</svg>

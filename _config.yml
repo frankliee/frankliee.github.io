@@ -1,0 +1,66 @@
+title: 我的技术博客
+subtitle: 记录从data infra转ai infra的点滴
+description: 记录从data infra转ai infra的点滴
+author: frankliee
+language: zh-CN
+timezone: Asia/Shanghai
+
+url: https://frankliee.github.io
+root: /
+permalink: :year/:month/:day/:title/
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+render_drafts: false
+future: false
+post_asset_folder: false
+syntax_highlighter: highlight.js
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: false
+  tab_replace: '  '
+  wrap: true
+  hljs: false
+
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: date
+per_page: 10
+pagination_dir: page
+
+theme: cactus
+theme_config:
+  colorscheme: white
+  nav:
+    home: /
+    articles: /archives/
+    tag: /tags/
+    about: /about/
+  social_links:
+    - icon: github
+      link: https://github.com/frankliee
+  posts_overview:
+    show_all_posts: true
+    sort_updated: false
+  projects_url: false
+  copyright:
+    start_year: 2026
+  cdn:
+    enable: false
+  umami_analytics:
+    enabled: true
+    id: 5cff3cc6-d085-4251-9b2a-95bd1c7f3d15
+    host: https://cloud.umami.is
+    script_name: script.js
+    domains: frankliee.github.io

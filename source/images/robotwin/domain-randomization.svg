@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="640" height="900" viewBox="0 0 640 900" role="img" aria-labelledby="title desc">
+  <title id="title">域随机化的场景对比示意</title>
+  <desc id="desc">同一个桌面操作任务，在基准场景和随机化场景中执行。随机化改变背景、光照、干扰物、桌面高度与语言指令。此图为概念示意，不是实测结果。</desc>
+  <defs>
+    <pattern id="wall" width="35" height="35" patternUnits="userSpaceOnUse"><rect width="35" height="35" fill="#dce8ed"/><path d="M0 35L35 0" stroke="#c1d4dd" stroke-width="3"/></pattern>
+    <g id="table"><path d="M110 108H450L560 248H50Z" fill="#eee9de" stroke="#d5cfbf" stroke-width="2"/><path d="M50 248H560V266H50Z" fill="#d5cfbf"/><path d="M92 266V286M520 266V286" stroke="#a3aaa4" stroke-width="12"/></g>
+    <g id="arms" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="144" cy="215" rx="27" ry="11" fill="#a9bbc2" stroke="none"/><ellipse cx="466" cy="215" rx="27" ry="11" fill="#a9bbc2" stroke="none"/>
+      <path d="M144 208L128 147L206 124L252 177M466 208L482 147L404 124L358 177" stroke="#718c9c" stroke-width="17"/>
+      <g fill="#ecf1f3" stroke="#587582" stroke-width="4"><circle cx="128" cy="147" r="11"/><circle cx="206" cy="124" r="11"/><circle cx="482" cy="147" r="11"/><circle cx="404" cy="124" r="11"/></g>
+      <path d="M242 184L252 177L263 183M242 184V199M263 183V198M348 183L358 177L369 183M348 183V198M369 183V198" stroke="#4a626d" stroke-width="5"/>
+      <rect x="291" y="187" width="33" height="32" rx="3" fill="#d87966" stroke="none"/><path d="M291 187L301 179H333L324 187Z" fill="#e79886" stroke="none"/><path d="M324 187L333 179V211L324 219Z" fill="#b85f50" stroke="none"/>
+      <ellipse cx="369" cy="220" rx="35" ry="15" fill="#9bc1cf" stroke="none"/>
+    </g>
+  </defs>
+  <rect width="640" height="900" rx="24" fill="#f5f9f6"/>
+  <g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    <text x="36" y="57" fill="#224c3e" font-size="29" font-weight="700">同一任务，换一组环境条件</text>
+    <text x="36" y="91" fill="#6c7c73" font-size="21">域随机化概念图 · 非实测场景或结果</text>
+    <rect x="36" y="115" width="152" height="37" rx="18" fill="#e0eee5"/>
+    <text x="112" y="142" text-anchor="middle" fill="#326b54" font-size="24" font-weight="600">基准场景</text>
+    <g transform="translate(0 166)">
+      <rect x="36" y="0" width="568" height="287" rx="16" fill="#fff" stroke="#dce5df" stroke-width="2"/>
+      <path d="M37 16Q37 0 53 0H588Q603 0 603 16V114H37Z" fill="#eef2ef"/>
+      <use xlink:href="#table"/><use xlink:href="#arms"/>
+      <rect x="338" y="18" width="220" height="44" rx="12" fill="#fff" stroke="#d3ded7"/>
+      <text x="448" y="47" text-anchor="middle" fill="#566b5f" font-size="21">把方块放到垫子上</text>
+    </g>
+    <rect x="36" y="482" width="176" height="37" rx="18" fill="#f8e8d4"/>
+    <text x="124" y="509" text-anchor="middle" fill="#936233" font-size="24" font-weight="600">随机化场景</text>
+    <g transform="translate(0 533)">
+      <rect x="36" y="0" width="568" height="287" rx="16" fill="#fff" stroke="#dce5df" stroke-width="2"/>
+      <path d="M37 16Q37 0 53 0H588Q603 0 603 16V114H37Z" fill="url(#wall)"/>
+      <path d="M121 36L37 235H263Z" fill="#f5d493" opacity=".25"/>
+      <path d="M108 18H133L145 41H96Z" fill="#d3a65e"/><path d="M120 0V18" stroke="#7d8c8b" stroke-width="3"/>
+      <g transform="translate(0 -12)"><use xlink:href="#table"/><use xlink:href="#arms"/>
+        <circle cx="121" cy="231" r="15" fill="#dfaa67"/><path d="M121 216L128 209" stroke="#6b9b64" stroke-width="4"/>
+        <rect x="455" y="205" width="31" height="28" rx="5" fill="#82aaa0"/><path d="M486 210C505 208 505 231 486 228" fill="none" stroke="#82aaa0" stroke-width="6"/>
+        <path d="M215 226L232 201L248 226Z" fill="#bea0c8"/>
+      </g>
+      <rect x="294" y="18" width="264" height="44" rx="12" fill="#fff" stroke="#d3ded7"/>
+      <text x="426" y="47" text-anchor="middle" fill="#566b5f" font-size="21">请将红色方块移到蓝色垫子</text>
+      <path d="M573 236V263M568 236H578M568 263H578" stroke="#a27c47" stroke-width="2"/>
+    </g>
+    <text x="320" y="858" text-anchor="middle" fill="#405c4c" font-size="23">背景 · 光照 · 干扰物 · 桌面高度 · 指令</text>
+    <text x="320" y="886" text-anchor="middle" fill="#78867d" font-size="20">重点：环境变化后，策略还能否完成目标？</text>
+  </g>
+</svg>
